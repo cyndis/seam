@@ -218,7 +218,7 @@ fn main() {
   let args = os::args();
   if args.len() < 4 {
     io::println("usage: seam <input.ppm> <cols> <output.ppm>");
-    io::println("where rows is the number of columns to carve out");
+    io::println("where cols is the number of columns to carve out");
   } else {
     let im = load_ppm(&path::Path(args[1]));
     let carved = carven(im.get_ref(), uint::from_str(args[2]).get());
