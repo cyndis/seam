@@ -16,3 +16,9 @@ $ ./seam input.ppm <pixels> output.ppm
 
 Input must be in the format created by
     convert abc.png -compress none abc.ppm
+
+Issues
+------
+
+Performance issues; e.g. recalculates energies for
+the whole image after each carved seam.
